@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creating Forms</title>
+</head>
+<body>
+  <!-- forms are used tocollect user input -->
+  <h1>Creating Forms</h1>
+  <form action="">
+    <div>
+      <!-- name -->
+      <!-- for=elementid -->
+    <label for="full-name">Full Name:</label>
+    <input type="text" 
+    name="user-fullname" 
+    id="full-name" 
+    placeholder="Ex: Vincent"
+    required
+    />
+    </div>
+
+    <div>
+      <!-- email -->
+      <label for="email-id">Email: </label>
+      <input type="email"
+      name="user-email"
+      id="email-id"
+      required
+      placeholder="slvdrvncntjvr@gmail.com" >
+    </div>
+
+    <div>
+      <label for="password-id">Password: </label>
+      <input type="password"
+      name="user-password"
+      id="password-id"
+      placeholder="***********"
+      required
+      />
+    </div>
+
+    <div>
+      <!-- user age -->
+      <label for="age-id">Age: </label>
+      <input type="number" 
+      name="age" 
+      id="age-id"
+      placeholder="15"
+      min="13"
+      max="100"
+      required>
+    </div>
+
+    <!-- text area is multi line, different from input -->
+    <div>
+      <label for="message-id">Message: </label>
+      <br>
+      <textarea name="user-message" 
+      id="message-id" 
+      cols="30" 
+      rows="5"
+      placeholder="What's on your mind?"
+      ></textarea>
+    </div>
+
+    <div>
+      <select name="gender" id="gender-id">
+        <option value="" disabled selected hidden>--Select your Gender--</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Nonbinary">Non-binary</option>
+      </select>
+    </div>
+
+    <div>
+      <!-- limited only one option / which is because of same name = "profile-status" -->
+      <input type="radio" name="profile-status" id="public-id" value="public">
+      <label for="public-id">Public</label>
+      <input type="radio" name="profile-status" id="private-id" value="Private">
+      <label for="private-id">Private</label>
+    </div>
+
+    <div>
+      <!-- range from zero or more options, checkbox -->
+       <input type="checkbox" name="Genre" id="Horror-id" value="Horror">
+       <label for="Horror-id">Horror</label>
+
+       <input type="checkbox" name="Genre" id="Thriller-id" value="Thriller">
+       <label for="Thriller-id">Thriller</label>
+
+      <input type="checkbox" name="Genre" id="Comedy-id" value="Thriller">
+      <label for="Comedy-id">Comedy</label>
+
+      <input type="checkbox" name="Genre" id="Anime-id" value="Anime">
+      <label for="Anime-id">Anime</label>
+
+      <input type="checkbox" name="Genre" id="Psycho-id" value="Pscyhological Horror">
+      <label for="Psycho-id">Psychological Horror</label>
+    </div>
+
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+
+  </form>
+</body>
+</html>
