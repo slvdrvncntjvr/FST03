@@ -1,0 +1,116 @@
+#text-styling{
+
+    /* font fall back - if not available it will choose the next font that it has */
+    /* default font style is sans serif  */
+    font-family: Arial, 'Courier New', monospace, sans-serif;
+
+    /* Font Weight */
+    font-weight: 100;
+    font-weight: 200;
+    font-weight: 300;
+    font-weight: 400;
+    font-weight: 500;
+    font-weight: 600;
+    font-weight: 700;
+    font-weight: 800;
+    font-weight: 900;
+    font-weight: 950;
+}
+
+#text-align{
+    /* Font Weight - Keyword */
+    font-weight: bold;
+    font-weight: lighter;
+    font-weight: normal;
+    font-weight: bolder;
+}
+
+#text-decoration{
+    text-decoration-line: none;
+    text-decoration-line: underline;
+    text-decoration-line: overline;
+    text-decoration-line: line-through;
+
+    text-decoration-style: solid;
+    text-decoration-style: dotted;
+    text-decoration-style: wavy;
+    text-decoration-style: double;
+
+    text-decoration-color: tomato;
+
+    text-decoration-thickness: 3px;
+    text-decoration-thickness: 30%;
+
+    text-decoration: 5px solid red line-through
+}
+
+#colors{
+/* from bootcamp */
+color: orange;
+    background-color: grey;
+    /* 0-255 */
+    color: rgb(55, 63, 171);
+    /* Alpha value - 0 = transparent - 1 = Fully Opaque*/
+    color: rgba(55, 63, 171,0.8);
+
+    color: red;
+    color: rgb(255, 0, 0);
+    color: rgba(255, 0, 0, 0.5);
+    color: hsl(0, 100%, 50%);
+    color: hsla(0, 100%, 50%, 0.5);
+    color: #ff0000;
+    color: tomato;
+    color: transparent;
+    color: currentColor;
+    color: inherit;
+    color: initial;
+    color: unset;
+    background-color: gray;
+
+    /* Opacity */
+    opacity: 0.5;
+
+    /* Color Adjustments */
+    filter: brightness(0.5);
+    filter: contrast(200%);
+    filter: saturate(200%);
+    filter: sepia(100%);
+    filter: grayscale(100%);
+    filter: hue-rotate(90deg);
+    filter: invert(100%);
+    filter: opacity(50%);
+    filter: blur(5px);
+    filter: drop-shadow(10px 10px 5px red);
+
+    /* Text Shadow */
+    text-shadow: 2px 2px 2px red;
+    text-shadow: 2px 2px red;
+    text-shadow: 2px red;
+    text-shadow: red;
+
+    /* Box Shadow */
+    box-shadow: 10px 10px 5px red;
+    box-shadow: 10px 10px red;
+    box-shadow: 10px red;
+    box-shadow: red;
+
+    /* Outline */
+    outline: 5px solid red;
+    outline: 5px solid;
+    outline: 5px;
+    outline: red;
+
+
+}
+
+#absolute-unit-px{
+    font-size: 24px; /*fixed value*/
+}
+
+#relative-unit-em{
+    font-size: 2em;
+}
+
+#relative-unit-rem{
+    font-size: 3rem;
+}

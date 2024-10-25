@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thee ways CSS</title>
+    <style>
+        #internal-styling{
+            color: blue;
+            font-size: 12px;
+        }
+        
+    </style>
+    <link rel="stylesheet" href="threeways.css">
+</head>
+<body>
+    <!-- three ways to use css -->
+    <!-- first is inline styling where we put it on p tag -->
+    <p style="color: red; font-size: 30px;">This paragraph is styled with Inline Styling.</p>
+
+    <!-- internal styling, put under head tag-->
+    <p id="internal-styling">This paragraph is styled with Internal Styling.</p>
+
+    <!-- external styling, put in a separate file -->
+    <p id="external-styling">This paragraph is styled with External Styling.</p>  
+</body>
+</html>

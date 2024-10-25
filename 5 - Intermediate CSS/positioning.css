@@ -1,0 +1,44 @@
+/* static */
+/* elements follow the normal document flow, top to bottom  */
+#relative {
+    background-color: yellow;
+    position: relative;
+    /* relative to its position */
+    /* when we set relative we now have accces to top right bottom left property */
+    top: 20px;
+    /* now have gap of 80 px from top of original position */
+    left: 10px;
+    /* now have gap of 10 px from left of original position */
+}
+
+/* Absolute */
+/* Remove the element from the normal document flow */
+/* Relative to the parent container that have a position that is not static */
+#absolute {
+    background-color: #0cf;
+    position: absolute;
+    /* top, right, bottom, left */
+    bottom: 0px;
+    right: 0px;
+  }
+
+/* Fixed */
+/* relative to the viewport */
+/* stays at the same palce when you scroll. */
+#fixed {
+    background-color: #f00;
+    position: fixed;
+    /* top, right, bottom, left */
+    bottom: 0;
+    right: 0;
+}
+
+/* use cases is navbar or redirect your website to otherp ages */
+/* Sticky */
+/* Starts as relative. When it hits a certain point, it will stick to it*/
+#sticky {
+    background-color: #3c3;
+    position: sticky;
+    /* top, right, bottom, left */
+    top: 0px;
+  }
